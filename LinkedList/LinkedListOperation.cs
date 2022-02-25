@@ -33,6 +33,14 @@ namespace LinkedList
             }
             return temp;
         }
+
+        public void AddFirst(int data)
+        {
+            Node newNode = new Node(data);
+            newNode.next = this.head;
+            this.head = newNode;
+            Console.WriteLine("{0} is inserted into LinkedList", newNode.data);
+        }
         public void Display()
         {
             Console.WriteLine("Displaying Nodes:");
