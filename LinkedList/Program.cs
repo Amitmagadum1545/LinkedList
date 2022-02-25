@@ -15,7 +15,8 @@ namespace LinkedList
             CustomLinkedList linkedList = new CustomLinkedList();
 
             Console.WriteLine("Please choose an option");
-            Console.WriteLine("\n1. Add element at last position \n2. Add element at first position \n3. Add element at last position using Append method");
+            Console.WriteLine("\n1. Add element at last position \n2. Add element at first position \n3. Add element at last position using Append method" +
+                "\n4. Insert element at perticular position");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -38,6 +39,13 @@ namespace LinkedList
                     linkedList.Append(56);
                     linkedList.Append(30);
                     linkedList.Append(70);
+                    linkedList.Display();
+                    break;
+                case 4:
+                    Console.WriteLine("insert element at particular position:");
+                    linkedList.Append(56);
+                    linkedList.Append(70);
+                    linkedList.Insert(1, 30);
                     linkedList.Display();
                     break;
                 default:
