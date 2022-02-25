@@ -17,7 +17,7 @@ namespace LinkedList
             Console.WriteLine("Please choose an option");
             Console.WriteLine("\n1. Add element at last position \n2. Add element at first position \n3. Add element at last position using Append method" +
                 "\n4. Insert element at perticular position \n5. Delete first element \n6. Delete last element \n7. Search for value \n8. Insert after value" +
-                "\n9. Delete an element");
+                "\n9. Delete an element \n10. Ordered Linkedlist");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -94,6 +94,14 @@ namespace LinkedList
                     linkedList.DeleteParticularElement(40);
                     linkedList.Display();
                     linkedList.Size();
+                    break;
+                case 10:
+                    Console.WriteLine("Ordered or Sorted Linkedlist:");
+                    linkedList.OrderedLinkedlist(56);
+                    linkedList.OrderedLinkedlist(30);
+                    linkedList.OrderedLinkedlist(40);
+                    linkedList.OrderedLinkedlist(70);
+                    linkedList.Display();
                     break;
                 default:
                     Console.WriteLine("Please enter the correct option");
