@@ -66,8 +66,19 @@ namespace LinkedList
                 }
                 newNode.next = temp.next;
                 temp.next = newNode;
+                Console.WriteLine("Inserted {0} at {1} position", newNode.data, index);
             }
         }
+
+        public void DeleteFirst()
+        {
+            if (head != null)
+            {
+                head = head.next;
+                Console.WriteLine("\nFirst element deleted");
+            }
+        }
+
 
         public void Display()
         {

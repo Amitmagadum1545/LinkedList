@@ -16,7 +16,7 @@ namespace LinkedList
 
             Console.WriteLine("Please choose an option");
             Console.WriteLine("\n1. Add element at last position \n2. Add element at first position \n3. Add element at last position using Append method" +
-                "\n4. Insert element at perticular position");
+                "\n4. Insert element at perticular position \n5. Delete first element");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -46,6 +46,15 @@ namespace LinkedList
                     linkedList.Append(56);
                     linkedList.Append(70);
                     linkedList.Insert(1, 30);
+                    linkedList.Display();
+                    break;
+                case 5:
+                    Console.WriteLine("Delete First Element:");
+                    linkedList.Append(56);
+                    linkedList.Append(70);
+                    linkedList.Insert(1, 30);
+                    linkedList.Display();
+                    linkedList.DeleteFirst();
                     linkedList.Display();
                     break;
                 default:
